@@ -1,0 +1,74 @@
+body{
+	background-color: white;
+	margin:0;
+}
+nav{
+	background-color:rgb(56,62,76);
+	text-align:center;
+	width:100%;
+	position:fixed;	/* Set the navbar to fixed position */
+	top:0;	/* Position the navbar at the top of the page */
+}
+nav li{
+	display:inline-block; /*Inline allow the black place next to each other*/
+}
+
+li a{
+	display: block; /*The whole link area is clickable, not just the text.*/
+	padding:15px;
+	margin:2px;
+	border: 1px solid lightslategrey;
+	text-decoration:none;	/*remove underline of a link*/
+}
+
+/* A link that has not been visited *//* A link that is selected *//* A link that has been visited */
+a:link,  a:active, a:visited{
+	color:white;
+}
+
+/* A link that is hovered on */
+a:hover {
+	color: white;
+	background-color: rgb(73,80,95);
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:10px;
+}
+
+.main-container{
+	margin-top: 70px; /* Add a top margin to avoid content overlay*/
+}
+.bg1-container,.bg2-container,.bg3-container{
+	position:relative;	/*element is relative to itself (its normal position)*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /*fixed = parallax scroll=normal*/
+	z-index:-1;	/* move behind the nav bar*/
+
+}
+.bg1-container{
+	background-image: url("/img/bg-1.jpg");
+	min-height:600px;
+}
+.bg2-container{
+	background-image: url("/img/bg-2.jpg");
+	min-height: 400px;
+}
+.bg3-container{
+	background-image: url("/img/bg-3.jpg");
+	min-height: 400px;
+}
+
+.txt1-center-container, .txt2-center-container, .txt3-center-container{
+	position:absolute;	/* the element is positioned absolutely to its first positioned parent*/
+	top:40%;
+	width:100%;
+	text-align:center;
+	color:white;
+} 
+
+
