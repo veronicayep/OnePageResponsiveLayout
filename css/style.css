@@ -1,6 +1,7 @@
 body{
 	background-color: white;
 	margin:0;
+
 }
 nav{
 	background-color:rgb(56,62,76);
@@ -10,7 +11,7 @@ nav{
 	top:0;	/* Position the navbar at the top of the page */
 }
 nav li{
-	display:inline-block; /*Inline allow the black place next to each other*/
+	display:inline-block; /*Inline allow the block place next to each other*/
 }
 
 li a{
@@ -40,6 +41,7 @@ ul {
 
 .main-container{
 	margin-top: 70px; /* Add a top margin to avoid content overlay*/
+
 }
 .bg1-container,.bg2-container,.bg3-container{
 	position:relative;	/*element is relative to itself (its normal position)*/
@@ -70,5 +72,40 @@ ul {
 	text-align:center;
 	color:white;
 } 
+
+
+.flex-3-box-container, .flex-2-box-container, .flex-4-box-container{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	flex-wrap:nowrap;
+	margin: 5em 10em 4em 10em;
+}
+
+.box{
+	background-color: lightgrey;
+	display:flex;
+	flex-direction:column;
+}
+.box-1,.box-2,.box-3 {
+	width:20em;
+	margin-right: 30px;
+
+}
+.col{
+	width:15em;
+	margin-right: 30px;
+}
+
+.text{
+	padding:20px;
+	font-size: 20px;
+}
+
+.box-left, .box-right{
+	margin-right: 30px;
+}
+
+
 
 
